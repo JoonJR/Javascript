@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript testing</title>
+</head>
+<body>
+<script>
+  'use strict';
+  console.log('i Have awaken');
+
+  let n1 = window.prompt('Enter first number');
+  document.write('<br>');
+  let n2 = window.prompt('Enter second number');
+
+  let temp;
+
+  temp = n1;
+  n1 = n2;
+  n2 = temp;
+
+  document.write(`The value of first number after swapping: ${n1}`);
+  document.write('<br>');
+  document.write(`The value of second number after swapping: ${n2}`);
+  document.write('<br>');
+
+  document.write('First and second numbers addition: ');
+  let result = parseInt(n1) + parseInt(n2);
+  document.write(result);
+  document.write('<br>');
+  if (result % 2 === 0) {
+    document.write('The result is even.');
+  } else {
+    document.write('The result is odd.');
+  }
+
+
+
+  document.write('<br>');
+  document.write('First and second numbers minus: ');
+  let result2 = parseInt(n1) - parseInt(n2);
+  document.write(result2);
+  document.write('<br>');
+  if (result2 % 2 === 0) {
+    document.write('The result is even.');
+} else {
+    document.write('The result is odd.');
+  }
+
+
+  document.write('<br>');
+
+  document.write('First and second numbers multiplication: ');
+  let result3 = parseInt(n1) * parseInt(n2);
+  document.write(result3);
+  document.write('<br>');
+  if (result3 % 2 === 0) {
+      document.write('The result is even.');
+} else {
+      document.write('The result is odd.');
+
+  }
+
+</script>
+
+</body>
+</html>
